@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DreamScape Gallery</title>
+    <link rel="stylesheet" href="i.css">
+</head>
+
+<body>
+
+<h1>✨ DreamScape Gallery ✨</h1>
+
+<div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('beach')">Beach</button>
+</div>
+
+<div class="gallery">
+
+    <img src="https://picsum.photos/id/10/400/300"
+         class="nature"
+         onclick="openLightbox(this.src)">
+
+    <img src="https://picsum.photos/id/1011/400/300"
+         class="nature"
+         onclick="openLightbox(this.src)">
+
+    <img src="https://picsum.photos/id/1015/400/300"
+         class="beach"
+         onclick="openLightbox(this.src)">
+
+    <img src="https://picsum.photos/id/1031/400/300"
+         class="city"
+         onclick="openLightbox(this.src)">
+
+    <img src="https://picsum.photos/id/1043/400/300"
+         class="beach"
+         onclick="openLightbox(this.src)">
+
+    <img src="https://picsum.photos/id/1060/400/300"
+         class="city"
+         onclick="openLightbox(this.src)">
+
+</div>
+
+<div id="lightbox">
+    <span onclick="closeLightbox()">✖</span>
+    <img id="lightbox-img">
+</div>
+
+<script src="i.js"></script>
+
+</body>
+</html>
